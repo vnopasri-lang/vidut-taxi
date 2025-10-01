@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>รถเช่าพร้อมคนขับ | เช่าง่าย ปลอดภัย บริการมืออาชีพ</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #0056b3;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .services, .about, .contact {
+      background-color: white;
+      margin: 1rem 0;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact button {
+      padding: 0.8rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ddd;
+      font-size: 0.9rem;
+    }
+
+    /* ปุ่มโทรลอย */
+    .floating-call {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      background-color: #e74c3c;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+
+    /* ปุ่มไลน์ลอย */
+    .floating-line {
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+      background-color: #00c300;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+
+    .floating-call:hover, .floating-line:hover {
+      opacity: 0.8;
+    }
+
+    /* เมลลิงก์ */
+    .email-link {
+      color: #007BFF;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>รถเช่าพร้อมคนขับ</h1>
+    <p>บริการรถเช่าระดับมืออาชีพ ปลอดภัย สะดวกสบาย</p>
+  </header>
+
+  <nav>
+    <a href="#services">บริการของเรา</a>
+    <a href="#about">เกี่ยวกับเรา</a>
+    <a href="#contact">ติดต่อเรา</a>
+  </nav>
+
+  <section id="services" class="services">
+    <h2>บริการของเรา</h2>
+    <ul>
+      <li>บริการรถเช่าพร้อมคนขับรายวัน รายชั่วโมง</li>
+      <li>รับ-ส่งสนามบิน</li>
+      <li>เดินทางท่องเที่ยวทั่วไทย</li>
+      <li>รถหรู, รถตู้ VIP พร้อมคนขับมืออาชีพ</li>
+    </ul>
+  </section>
+
+  <section id="about" class="about">
+    <h2>เกี่ยวกับเรา</h2>
+    <p>เราคือทีมผู้ให้บริการรถเช่าพร้อมคนขับที่เน้นคุณภาพและความปลอดภัย ทีมงานของเราผ่านการอบรม มีใบอนุญาตถูกต้อง และมุ่งมั่นให้บริการด้วยความสุภาพและตรงเวลา</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>ติดต่อเรา</h2>
+    <p><strong>โทร:</strong> <a href="tel:0986438583">098-643-8583</a></p>
+    <p><strong>Line:</strong> <a href="https://line.me/ti/p/jJNqiTjh8N" target="_blank">คลิกเข้ากลุ่มไลน์</a></p>
+    <p><strong>อีเมล:</strong> <a class="email-link" href="mailto:vnopasri@gmail.com">vnopasri@gmail.com</a></p>
+    <form>
+      <input type="text" placeholder="ชื่อของคุณ" required>
+      <input type="email" placeholder="อีเมล" required>
+      <textarea rows="4" placeholder="ข้อความหรือรายละเอียดที่ต้องการสอบถาม" required></textarea>
+      <button type="submit">ส่งข้อความ</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 รถเช่าพร้อมคนขับ | โทร. 098-643-8583 | Line: @carservice<br>
+    <p>Black coffee wow it's fine my shopping list</p>
+  </footer>
+
+  <!-- ปุ่มลอย -->
+  <a href="tel:0986438583" class="floating-call" title="โทรหาเรา">📞</a>
+  <a href="https://line.me/ti/p/jJNqiTjh8N" class="floating-line" title="แชททางไลน์" target="_blank">💬</a>
+
+</body>
+</html>
